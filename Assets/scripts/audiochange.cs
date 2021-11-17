@@ -13,7 +13,7 @@ public class audiochange : MonoBehaviour
     void OnTriggerEnter(Collider other)
         {
         // Make sure your character is tagged 'player'
-            if (other.CompareTag("player"))
+        if (other.gameObject.CompareTag("player"))
             {
         // Plays the audio that you want...
                 background.Stop();
