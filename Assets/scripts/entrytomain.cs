@@ -9,7 +9,7 @@ public class entrytomain : MonoBehaviour
     {
         if (ChangeScene.gameObject.CompareTag("Player"))
         {
-            Application.LoadLevelAdditive(1); //1 is the build order it could be 1065 for you if you have that many scenes
+            Application.LoadLevelAdditive(2); //2 is the build order it could be 1065 for you if you have that many scenes
         }
     }
 
