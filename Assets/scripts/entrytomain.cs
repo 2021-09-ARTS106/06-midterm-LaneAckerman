@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class entrytomain : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class entrytomain : MonoBehaviour
     {
         if (ChangeScene.gameObject.CompareTag("Player"))
         {
-            Application.LoadLevelAdditive(2); //2 is the build order it could be 1065 for you if you have that many scenes
+            SceneManager.LoadScene(2); //2 is the build order it could be 1065 for you if you have that many scenes
         }
     }
 
