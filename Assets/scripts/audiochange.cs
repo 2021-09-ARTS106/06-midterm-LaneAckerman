@@ -16,10 +16,25 @@ public class audiochange : MonoBehaviour
         // Make sure your character is tagged 'player'
         if (other.gameObject.CompareTag("Player"))
             {
-        // Plays the audio that you want...
-                background.Stop();
-                tensionZone.Play();
-                Debug.Log(Message);
+            // Plays the audio that you want...
+            if (_AudioSource1.isPlaying)
+            {
+
+                _AudioSource1.Stop();
+
+                _AudioSource2.Play();
+
+            }
+
+            else
+            {
+
+                _AudioSource2.Stop();
+
+                _AudioSource1.Play();
+
+            }
+            Debug.Log(Message);
         }
         }
 }
